@@ -28,16 +28,6 @@
 };
 
 // Scroll movements
-#define U_MOUSE_SCRL_MAX 100                    /* <--- New max speed setting (default: 10) */
-
-#undef SCRL_UP
-#undef SCRL_DOWN
-#undef SCRL_LEFT
-#undef SCRL_RIGHT
-#define SCRL_UP MOVE_Y(U_MOUSE_SCRL_MAX)
-#define SCRL_DOWN MOVE_Y(-U_MOUSE_SCRL_MAX)
-#define SCRL_LEFT MOVE_X(-U_MOUSE_SCRL_MAX)
-#define SCRL_RIGHT MOVE _X(U_MOUSE_SCRL_MAX)
 
 &msc {
   time-to-max-speed-ms = <300>;                 /* <--- How long time until max speed is reached */
