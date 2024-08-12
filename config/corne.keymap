@@ -33,7 +33,7 @@
             // |  TAB |  7  |  8  |  9  |     |     |   |     |     |     |     |     | BKSP |
             // | BTCLR|  4  |  5  |  6  |     |     |   |MLEFT|MDOWN| MUP |MRIGH|     |      |
             // | SHFT |  1  |  2  |  3  |  0  |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                    |     |     |     |   |     |     |     |
 
             display-name = "Lower";
             bindings = <
@@ -48,15 +48,15 @@
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |  -  |  =  |  [  |  ]  |  \  |   | LFT | DWN |  UP | RGT |     |  `   |
-            // | SHFT |  `  |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // | SHFT |  `  |     |     |     |     |   | HOM | PGU | PGD | END | "|" |  ~   |
+            //                    |     |     |     |   |     |     |     |
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp BSPC
-&kp LCTRL  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN     &kp UP           &kp RIGHT  &trans    &kp GRAVE
-&kp LSHFT  &kp GRAVE  &trans     &trans    &trans    &trans       &kp HOME   &kp PAGE_UP  &kp PAGE_DOWN    &kp END    &kp PIPE  &kp TILDE
-                                 &kp LGUI  &trans    &kp SPACE    &kp RET    &trans       &kp RALT
+&kp TAB    &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp BSPC
+&kp LCTRL  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN       &kp UP           &kp RIGHT  &trans    &kp GRAVE
+&kp LSHFT  &kp GRAVE  &trans     &trans    &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP      &kp END    &kp PIPE  &kp TILDE
+                                 &trans    &trans    &trans       &trans     &trans         &trans
             >;
         };
 
