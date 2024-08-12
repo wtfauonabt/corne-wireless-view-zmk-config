@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
     keymap {
@@ -38,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB    &kp N7  &kp N8  &kp N9    &trans  &trans       &trans            &trans          &trans        &trans            &trans  &kp BSPC
-&trans     &kp N4  &kp N5  &kp N6    &trans  &trans       &trans            &trans          &trans        &trans            &trans  &trans
-&kp LSHFT  &kp N1  &kp N2  &kp N3    &kp N0  &trans       &trans            &trans          &trans        &trans            &trans  &trans
-                           &kp LGUI  &trans  &kp SPACE    &kp RET           &trans          &kp RALT
+&kp TAB    &kp N7  &kp N8  &kp N9        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp BSPC
+&trans     &kp N4  &kp N5  &kp N6        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp N1  &kp N2  &kp N3        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp NUMBER_0  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -54,15 +53,14 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN  &kp UP           &kp RIGHT &trans    &kp GRAVE
-&kp LSHFT  &kp GRAVE  &trans     &trans    &trans    &trans       &kp UNDER  &kp PLUS  &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                 &kp LGUI  &trans    &kp SPACE    &kp RET    &trans    &kp RALT
+&kp TAB    &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp BSPC
+&kp LCTRL  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN     &kp UP           &kp RIGHT  &trans    &kp GRAVE
+&kp LSHFT  &kp GRAVE  &trans     &trans    &trans    &trans       &kp HOME   &kp PAGE_UP  &kp PAGE_DOWN    &kp END    &kp PIPE  &kp TILDE
+                                 &kp LGUI  &trans    &kp SPACE    &kp RET    &trans       &kp RALT
             >;
         };
 
         tri_layer {
-
             // -----------------------------------------------------------------------------------------
             // |      |     |     |     |     |     |   | BT0 | BT1 | BT2 | BT3 | BT4 | BTCLR|
             // |      |     |     |     |     |     |   |     |     |     |     |     |      |
@@ -71,10 +69,10 @@
 
             display-name = "Tri";
             bindings = <
-&trans      &trans      &trans      &trans      &trans      &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR
-&trans      &trans      &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans
-&trans      &trans      &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans
-                                    &trans      &trans      &trans          &trans          &trans          &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans    &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans    &trans        &trans        &trans        &trans        &trans        &trans
+                        &trans  &trans   &trans    &trans        &trans        &trans
             >;
 
             label = "Tri";
