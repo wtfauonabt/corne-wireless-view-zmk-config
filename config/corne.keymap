@@ -26,7 +26,7 @@
 #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
 &mmv {
-    time-to-max-speed-ms = <250>;             /* <--- How long time until max speed is reached (default: 500) */
+    time-to-max-speed-ms = <500>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 
 // Scroll movements
@@ -42,7 +42,7 @@
 #define SCRL_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
 &msc {
-    time-to-max-speed-ms = <300>;                 /* <--- How long time until max speed is reached */
+    time-to-max-speed-ms = <50>;                 /* <--- How long time until max speed is reached */
 };
 
 / {
