@@ -9,6 +9,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
 // Mouse movements
@@ -99,10 +100,10 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &trans
-&trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN       &kp UP           &kp RIGHT  &trans    &kp GRAVE
-&trans  &kp GRAVE  &trans     &trans    &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP      &kp END    &kp PIPE  &kp TILDE
-                              &trans    &trans    &trans       &trans     &trans         &trans
+&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp KP_MULTIPLY       &kp LPAR   &kp RPAR  &kp DELETE
+&trans  &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN       &kp UP                &kp RIGHT  &trans    &kp GRAVE
+&trans  &kp GRAVE  &trans     &trans        &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP           &kp END    &kp PIPE  &kp TILDE
+                              &kt CAPSLOCK  &trans    &trans       &trans     &trans         &sk LS(LA(LC(LGUI)))
             >;
         };
 
