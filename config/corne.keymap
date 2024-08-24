@@ -45,6 +45,12 @@
     time-to-max-speed-ms = <300>;                 /* <--- How long time until max speed is reached */
 };
 
+// Mod tap
+
+&mt {
+    tapping-term-ms = <400>
+}
+
 / {
     keymap {
         compatible = "zmk,keymap";
