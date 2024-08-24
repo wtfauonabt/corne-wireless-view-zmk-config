@@ -45,20 +45,6 @@
     time-to-max-speed-ms = <300>;                 /* <--- How long time until max speed is reached */
 };
 
-// Mod tap
-
-&mt {
-    tapping-term-ms = <400>
-};
-
-// Sticky Key
-
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -122,7 +108,7 @@
             bindings = <
 &trans        &trans  &kp F7  &kp F8  &kp F9  &kp F12    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &trans        &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans        &trans        &trans        &trans        &trans        &trans
-&sk CAPSLOCK  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans        &trans        &trans        &trans        &trans        &trans
+&trans      &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans        &trans        &trans        &trans        &trans        &trans
                               &trans  &trans  &trans     &trans        &trans        &trans
             >;
 
