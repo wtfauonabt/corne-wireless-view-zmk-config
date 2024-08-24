@@ -42,7 +42,7 @@
 #define SCRL_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
 &msc {
-    time-to-max-speed-ms = <300>;                 /* <--- How long time until max speed is reached */
+    time-to-max-speed-ms = <10>;                 /* <--- How long time until max speed is reached */
 };
 
 / {
@@ -78,8 +78,8 @@
             // -----------------------------------------------------------------------------------------
             // |      |     |  7  |  8  |  9  |     |   |     |     |     |     |     |      |
             // |      |     |  4  |  5  |  6  |     |   |MLEFT|MDOWN| MUP |MRIGH|     |      |
-            // |      |     |  1  |  2  |  3  |     |   |SCRLT|SCRDW|SCRUP|SCRRT|     |      |
-            //                    |  0  |     |     |   | MB1 |     | MB2 |
+            // |      |     |  1  |  2  |  3  |  0  |   |SCRLT|SCRDW|SCRUP|SCRRT|     |      |
+            //                    | HYP |     |     |   | MB1 |     | MB2 |
 
             display-name = "Lower";
             bindings = <
@@ -92,10 +92,10 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-            // |      |  -  |  =  |  [  |  ]  |  \  |   | LFT | DWN |  UP | RGT |     |  `   |
-            // |      |  `  |     |     |     |     |   | HOM | PGD | PGU | END | "|" |  ~   |
-            //                    |     |     |     |   |     |     |     |
+            // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
+            // |      |  -  |  =  |  [  |  ]  |  \  |   | LFT | DWN |  UP | RGT |     |  `  |
+            // |      |  `  |     |     |     |     |   | HOM | PGD | PGU | END | "|" |  ~  |
+            //                    | HYP |     |     |   |     |     | CAP |
 
             display-name = "Raise";
             bindings = <
@@ -108,17 +108,17 @@
 
         tri_layer {
             // -----------------------------------------------------------------------------------------
-            // |      |     | FN7 | FN8 | FN9 |     |   | BT0 | BT1 | BT2 | BT3 | BT4 | BTCLR|
-            // |      |     | FN4 | FN5 | FN6 |     |   |     |     |     |     |     |      |
-            // | CAPS |     | FN1 | FN2 | FN3 |     |   |     |     |     |     |     |      |
-            //                    | HYP |     |     |   |     |     |     |  
+            // |      |     | FN7 | FN8 | FN9 |     |   | BT0 | BT1 | BT2 | BT3 | BT4 | BTCLR |
+            // |      |     | FN4 | FN5 | FN6 |     |   |     |     |     |     |     |       |
+            // | CAPS |     | FN1 | FN2 | FN3 |     |   |     |     |     |     |     |       |
+            //                    | HYP |     |     |   |     |     | CAP |  
 
             display-name = "Tri";
             bindings = <
-&trans        &trans  &kp F7  &kp F8                &kp F9  &kp F12         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&trans        &trans  &kp F4  &kp F5                &kp F6  &kp F11         &trans        &trans        &trans        &trans        &trans        &trans
-&sk CAPSLOCK  &trans  &kp F1  &kp F2                &kp F3  &kp F10         &trans        &trans        &trans        &trans        &trans        &trans
-                              &sk LS(LA(LC(LGUI)))  &trans  &sk CAPSLOCK    &trans        &trans        &sk CAPSLOCK
+&trans  &trans  &kp F7  &kp F8                &kp F9  &kp F12   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans  &trans  &kp F4  &kp F5                &kp F6  &kp F11   &trans        &trans        &trans        &trans        &trans        &trans
+&trnas  &trans  &kp F1  &kp F2                &kp F3  &kp F10   &trans        &trans        &trans        &trans        &trans        &trans
+                        &sk LS(LA(LC(LGUI)))  &trans  &trans    &trans        &trans        &sk CAPSLOCK
             >;
 
             label = "Tri";
