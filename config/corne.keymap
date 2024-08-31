@@ -95,14 +95,14 @@
             // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
             // |      |  -  |  =  |  [  |  ]  |  \  |   | LFT | DWN |  UP | RGT |     |  `  |
             // |      |  `  |     |     |     |     |   | HOM | PGD | PGU | END | "|" |  ~  |
-            //                    | HYP |     |     |   |     |     | CAP |
+            //                    | GUI |     |     |   |     |     | CAP |
 
             display-name = "Raise";
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH              &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp DELETE
-&trans  &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN       &kp UP           &kp RIGHT  &trans    &kp GRAVE
-&trans  &kp GRAVE  &trans     &trans                &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP      &kp END    &kp PIPE  &kp TILDE
-                              &sk LS(LA(LC(LGUI)))  &trans    &trans       &trans     &trans         &sk CAPSLOCK
+&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp DELETE
+&trans  &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH     &kp LEFT   &kp DOWN       &kp UP           &kp RIGHT  &trans    &kp GRAVE
+&trans  &kp GRAVE  &trans     &trans        &trans    &trans       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP      &kp END    &kp PIPE  &kp TILDE
+                              &LGUI         &trans    &trans       &trans     &trans         &sk CAPSLOCK
             >;
         };
 
