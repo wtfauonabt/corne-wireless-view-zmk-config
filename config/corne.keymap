@@ -31,15 +31,17 @@
 
 // Scroll movements
 
+#define U_MOUSE_SCROLL_MAX 500
+
 #undef SCRL_UP
 #undef SCRL_DOWN
 #undef SCRL_LEFT
 #undef SCRL_RIGHT
 
-#define SCRL_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
-#define SCRL_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
-#define SCRL_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
-#define SCRL_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
+#define SCRL_UP MOVE_Y(-U_MOUSE_SCROLL_MAX)
+#define SCRL_DOWN MOVE_Y(U_MOUSE_SCROLL_MAX)
+#define SCRL_LEFT MOVE_X(-U_MOUSE_SCROLL_MAX)
+#define SCRL_RIGHT MOVE_X(U_MOUSE_SCROLL_MAX)
 
 &msc {
     time-to-max-speed-ms = <50>;                 /* <--- How long time until max speed is reached */
