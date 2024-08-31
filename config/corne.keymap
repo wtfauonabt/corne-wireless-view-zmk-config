@@ -44,7 +44,6 @@
 #define SCRL_RIGHT MOVE_X(U_MOUSE_SCROLL_MAX)
 
 &msc {
-    time-to-max-speed-ms = <10>;                 /* <--- How long time until max speed is reached */
 };
 
 / {
