@@ -110,15 +110,15 @@
             // -----------------------------------------------------------------------------------------
             // |      |     | FN7 | FN8 | FN9 |     |   | BT0 | BT1 | BT2 | BT3 | BT4 | BTCLR |
             // |      |     | FN4 | FN5 | FN6 |     |   |     |     |     |     |     |       |
-            // | CAPS |     | FN1 | FN2 | FN3 |     |   |     |     |     |     |     |       |
+            // | CAPS |     | FN1 | FN2 | FN3 |     |   |     | ZMI | ZMO |     |     |       |
             //                    | HYP |     |     |   |     |     | CAP |  
 
             display-name = "Tri";
             bindings = <
-&trans  &trans  &kp F7  &kp F8                &kp F9  &kp F12   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&trans  &trans  &kp F4  &kp F5                &kp F6  &kp F11   &trans        &trans        &trans        &trans        &trans        &trans
-&trnas  &trans  &kp F1  &kp F2                &kp F3  &kp F10   &trans        &trans        &trans        &trans        &trans        &trans
-                        &sk LS(LA(LC(LGUI)))  &trans  &trans    &trans        &trans        &sk CAPSLOCK
+&trans  &trans  &kp F7  &kp F8                &kp F9  &kp F12   &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans  &trans  &kp F4  &kp F5                &kp F6  &kp F11   &trans        &trans                &trans              &trans        &trans        &trans
+&trnas  &trans  &kp F1  &kp F2                &kp F3  &kp F10   &trans        &kp C_AC_ZOOM_IN      &kp C_AC_ZOOM_OUT   &trans        &trans        &trans
+                        &sk LS(LA(LC(LGUI)))  &trans  &trans    &trans        &trans                &sk CAPSLOCK
             >;
 
             label = "Tri";
