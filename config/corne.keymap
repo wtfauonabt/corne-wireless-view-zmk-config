@@ -14,7 +14,7 @@
 
 // Mouse movements
 
-#define U_MOUSE_MOVE_MAX 5000
+#define U_MOUSE_MOVE_MAX 8000
 
 #undef MOVE_UP
 #undef MOVE_DOWN
